@@ -18,7 +18,6 @@ RUN apk -v --update add \
         datetime \
         requests \
         && \
-    apk -v --purge del py3-pip && \
     rm /var/cache/apk/*
 
 VOLUME /root/.aws
